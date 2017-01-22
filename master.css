@@ -68,11 +68,15 @@ h2 {
 
 .contact {
     position: fixed;
-    top: 50%;
+    top: 48%;
     left: 80%;
-    height: 6em;
-    background-color: blue;
+
+}
+
+a>img, img {
     width: 2em;
+    display: block;
+    padding: 5%
 }
 
 nav {
@@ -105,7 +109,7 @@ a {
     width: 54%;
     background-color: rgba(255, 255, 255, 0.3);
     float: left;
-    padding: 1em 1em 5em 1em ;
+    padding: 1em 1em 5em 1em;
     box-sizing: border-box;
 }
 
