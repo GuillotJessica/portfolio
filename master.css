@@ -1,58 +1,114 @@
-body{
-  margin: 0;
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
 
-  box-sizing: border-box;
+.container {
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding-right: 5em;
+    text-align: right;
+    overflow: hidden;
+    background-color: green;
+    height: 100vh;
+    width: 60%;
+    margin-left: 20%;
+    color: white;
 }
-header{
-  box-sizing: border-box;
-  padding: 5em;
-  text-align: right;
-  overflow: hidden;
-  background-image: url(images/code.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 60%;
-  margin-left: 20%;
-  color: white;
 
+h1 {
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    top: -88vh;
+    right: 29vw;
+    animation-duration: 5s;
+    animation-name: boumH1;
 }
-nav{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  min-width: 600px;
-  max-width: 1000px;
-  margin-left: calc((100vw - 1000px) / 2);
-  border: 1px solid black;
-  border-radius: 0.5em;
-  font-family: 'Varela Round', sans-serif;
 
+
+/*@keyframes boumH1 {
+    0% {
+        top: 0;
+        right: 29vw;
+
+    }
+    100% {
+        top: 88vh;
+        right: 29vw;
+
+    }
+}*/
+
+h2 {
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    top: -80vh;
+    right: 29vw;
+    /*  animation-duration: 5s;
+    animation-name: boumH2;*/
 }
-span{
-  padding: 1em;
+
+
+/*@keyframes boumH2 {
+    0% {
+        top: -20vh;
+        right: 29vw;
+
+    }
+    100% {
+        top: 80vh;
+        right: 29vw;
+
+    }
+}*/
+
+.contact {
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    height: 6em;
+    background-color: blue;
+    width: 2em;
 }
-.category{
-  box-sizing: border-box;
-  width: 60%;
-  margin-left: 20%;
-  display: flex;
-  align-items: stretch;
+
+nav {
+    color: white;
+    float: left;
+    top: 0;
+    text-align: right;
+    padding: 0 3em;
+    width: 30%;
+    padding-right: 2em;
+    display: none;
 }
-.big{
-  width: 70%;
-  height: 100%;
-  background-color: blue;
-  float: left;
-  height: 100%;
-  padding: 1em;
+
+.header:hover {
+    border-right: 0.1em solid white;
+    padding: 1em 2em 1em 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s ease-in
 }
-.small{
-  width:30%;
-  padding: 1em;
-  height: 100%;
-  heigth : 10em;
-  background-color: pink;
-  float: left;
+
+a {
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    text-decoration: none;
 }
-.footer{
+
+.snippet {
+    display: none;
+    width: 54%;
+    background-color: rgba(255, 255, 255, 0.3);
+    float: left;
+    padding: 1em 1em 5em 1em ;
+    box-sizing: border-box;
+}
+
+.selected {
+    display: block;
 }
