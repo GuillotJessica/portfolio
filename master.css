@@ -83,7 +83,27 @@ nav>a {
     padding: 1em 1em 5em 1em;
     box-sizing: border-box;
 }
-
+.snippet > p{
+  text-align: justify;
+}
+.LangDiv{
+  box-sizing: border-box;
+  width: 100%;
+  height: 2em;
+  background-color: #b03554;
+  margin: 0.5em;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  border-radius:  15px 0px;
+}
+.LangDiv > p{
+  vertical-align: middle;
+}
+.HTMLFull{
+  width: 100%;
+  background-color: white;
+  height: 1em;
+}
 .selected {
     display: block;
 }

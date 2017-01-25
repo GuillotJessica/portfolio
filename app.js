@@ -5,7 +5,7 @@ let moveDown = function() {
     $('h1').animate({
         top: '88vh'
     }, 1000, 'swing', function() {
-        $('nav').fadeIn(4000);
+        $('nav').fadeIn(1000);
     })
 }
 
