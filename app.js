@@ -14,31 +14,96 @@ let moveDown = function() {
 
 
 $(document).ready(function() {
-    if (window.matchMedia("(min-width: 800px)").matches) {
+    if (window.matchMedia("(min-width: 700px)").matches) {
         moveDown()
         $(".header").hover(function() {
             // `this` is the DOM element that was clicked
             var index = $(".header").index(this);
             $(".snippet").removeClass('selected');
             $(".snippet").eq(index).addClass('selected');
-
         });
+        $(".navlangages").hover(function() {
+          //set width to zero at first to restart the animation for each hover
+          $(".HTMLFull").css('width',0);
+          $(".CssFull").css('width',0);
+          $(".BootstrapFull").css('width',0);
+          $(".JSFull").css('width',0);
+          $(".JQFull").css('width',0);
+          $(".PhPFull").css('width',0);
+          $(".WPFull").css('width',0);
+//animate the width of progress bar
+            $(".HTMLFull").animate({width: '16.2em'}, 1000);
+            $(".CssFull").animate({
+                width: '13.65em',
+            }, 1000);
+            $(".BootstrapFull").animate({
+                width: '10.85em',
+            }, 1000);
+            $(".JSFull").animate({
+                width: '6.2em',
+            }, 1000);
+            $(".JQFull").animate({
+                width: '12.25em',
+            }, 1000);
+            $(".PhPFull").animate({
+                width: '1.95em',
+            }, 1000);
+            $(".WPFull").animate({
+                width: '9em',
+            }, 1000);
+        });
+
     } else {
+      //mediaquery with no animation
         $("h2").css('top', '0vh');
         $("h1").css('top', '9vh');
         $('h1').css('lineHeight', "1");
         $(".contact").css('top', '2.6vh');
-console.log($('nav').height());
-$(".header").click(function() {
-    // `this` is the DOM element that was clicked
-    var index = $(".header").index(this);
-    $(".snippet").removeClass('selected');
-    $(".snippet").eq(index).addClass('selected');
-    $(".header").removeClass('borderbtt');
-    $(".header").eq(index).addClass('borderbtt');
+        console.log($('nav').height());
+        // set the nav index[i] clicked and show snippet[i] that matched
+        $(".header").click(function() {
+            // `this` is the DOM element clicked
+            var index = $(".header").index(this);
+            // clear display block to the snippet  and border bottom to the nav
+            $(".snippet").removeClass('selected');
+            $(".header").removeClass('borderbtt');
+            // display block and border bottom the nav
+            $(".snippet").eq(index).addClass('selected');
+            $(".header").eq(index).addClass('borderbtt');
+        });
+        $(".navlangages").click(function() {
+          //set width to zero at first to restart the animation for each hover
+          $(".HTMLFull").css('width',0);
+          $(".CssFull").css('width',0);
+          $(".BootstrapFull").css('width',0);
+          $(".JSFull").css('width',0);
+          $(".JQFull").css('width',0);
+          $(".PhPFull").css('width',0);
+          $(".WPFull").css('width',0);
 
 
-
-});
+//animate the width of progress bar
+            $(".HTMLFull").animate({
+                width: '16.2em',
+            }, 1000);
+            $(".CssFull").animate({
+                width: '13.65em',
+            }, 1000);
+            $(".BootstrapFull").animate({
+                width: '10.85em',
+            }, 1000);
+            $(".JSFull").animate({
+                width: '6.2em',
+            }, 1000);
+            $(".JQFull").animate({
+                width: '12.25em',
+            }, 1000);
+            $(".PhPFull").animate({
+                width: '1.95em',
+            }, 1000);
+            $(".WPFull").animate({
+                width: '9em',
+            }, 1000);
+        });
     }
 });
