@@ -32,24 +32,24 @@ $(document).ready(function() {
           $(".PhPFull").css('width',0);
           $(".WPFull").css('width',0);
 //animate the width of progress bar
-            $(".HTMLFull").animate({width: '16.2em'}, 1000);
+            $(".HTMLFull").animate({width: '63%'}, 1000);
             $(".CssFull").animate({
-                width: '13.65em',
+                width: '49%',
             }, 1000);
             $(".BootstrapFull").animate({
-                width: '10.85em',
+                width: '49%',
             }, 1000);
             $(".JSFull").animate({
-                width: '6.2em',
+                width: '28%',
             }, 1000);
             $(".JQFull").animate({
-                width: '12.25em',
+                width: '49%',
             }, 1000);
             $(".PhPFull").animate({
-                width: '1.95em',
+                width: '7%',
             }, 1000);
             $(".WPFull").animate({
-                width: '9em',
+                width: '42%',
             }, 1000);
         });
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
         $("h2").css('top', '0vh');
         $("h1").css('top', '9vh');
         $('h1').css('lineHeight', "1");
-        $(".contact").css('top', '2.6vh');
+        $(".contact").css('top', '0.4vh');
         console.log($('nav').height());
         // set the nav index[i] clicked and show snippet[i] that matched
         $(".header").click(function() {
@@ -80,29 +80,25 @@ $(document).ready(function() {
           $(".JQFull").css('width',0);
           $(".PhPFull").css('width',0);
           $(".WPFull").css('width',0);
-
-
 //animate the width of progress bar
-            $(".HTMLFull").animate({
-                width: '16.2em',
-            }, 1000);
+            $(".HTMLFull").animate({width: '63%'}, 1000);
             $(".CssFull").animate({
-                width: '13.65em',
+                width: '49%',
             }, 1000);
             $(".BootstrapFull").animate({
-                width: '10.85em',
+                width: '49%',
             }, 1000);
             $(".JSFull").animate({
-                width: '6.2em',
+                width: '28%',
             }, 1000);
             $(".JQFull").animate({
-                width: '12.25em',
+                width: '49%',
             }, 1000);
             $(".PhPFull").animate({
-                width: '1.95em',
+                width: '7%',
             }, 1000);
             $(".WPFull").animate({
-                width: '9em',
+                width: '42%',
             }, 1000);
         });
     }
