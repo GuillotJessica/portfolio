@@ -1,9 +1,9 @@
 let moveDown = function() {
     $('h2').animate({
-        top: '80vh'
+        bottom: '4.5vh'
     }, 1000, 'swing');
     $('h1').animate({
-        top: '88vh'
+        bottom: '0'
     }, 1000, 'swing', function() {
         $('nav').fadeIn(1000);
     })
@@ -14,7 +14,7 @@ let moveDown = function() {
 
 
 $(document).ready(function() {
-    if (window.matchMedia("(min-width: 700px)").matches) {
+    if (window.matchMedia("(min-width: 800px)").matches) {
         moveDown()
         $(".header").hover(function() {
             // `this` is the DOM element that was clicked
