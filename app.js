@@ -23,16 +23,18 @@ $(document).ready(function() {
             $(".snippet").eq(index).addClass('selected');
         });
         $(".navlangages").hover(function() {
-          //set width to zero at first to restart the animation for each hover
-          $(".HTMLFull").css('width',0);
-          $(".CssFull").css('width',0);
-          $(".BootstrapFull").css('width',0);
-          $(".JSFull").css('width',0);
-          $(".JQFull").css('width',0);
-          $(".PhPFull").css('width',0);
-          $(".WPFull").css('width',0);
-//animate the width of progress bar
-            $(".HTMLFull").animate({width: '63%'}, 1000);
+            //set width to zero at first to restart the animation for each hover
+            $(".HTMLFull").css('width', 0);
+            $(".CssFull").css('width', 0);
+            $(".BootstrapFull").css('width', 0);
+            $(".JSFull").css('width', 0);
+            $(".JQFull").css('width', 0);
+            $(".PhPFull").css('width', 0);
+            $(".WPFull").css('width', 0);
+            //animate the width of progress bar
+            $(".HTMLFull").animate({
+                width: '63%'
+            }, 1000);
             $(".CssFull").animate({
                 width: '49%',
             }, 1000);
@@ -54,7 +56,7 @@ $(document).ready(function() {
         });
 
     } else {
-      //mediaquery with no animation
+        //mediaquery with no animation
         $("h2").css('top', '0vh');
         $("h1").css('top', '9vh');
         $('h1').css('lineHeight', "1");
@@ -72,16 +74,18 @@ $(document).ready(function() {
             $(".header").eq(index).addClass('borderbtt');
         });
         $(".navlangages").click(function() {
-          //set width to zero at first to restart the animation for each hover
-          $(".HTMLFull").css('width',0);
-          $(".CssFull").css('width',0);
-          $(".BootstrapFull").css('width',0);
-          $(".JSFull").css('width',0);
-          $(".JQFull").css('width',0);
-          $(".PhPFull").css('width',0);
-          $(".WPFull").css('width',0);
-//animate the width of progress bar
-            $(".HTMLFull").animate({width: '63%'}, 1000);
+            //set width to zero at first to restart the animation for each hover
+            $(".HTMLFull").css('width', 0);
+            $(".CssFull").css('width', 0);
+            $(".BootstrapFull").css('width', 0);
+            $(".JSFull").css('width', 0);
+            $(".JQFull").css('width', 0);
+            $(".PhPFull").css('width', 0);
+            $(".WPFull").css('width', 0);
+            //animate the width of progress bar
+            $(".HTMLFull").animate({
+                width: '63%'
+            }, 1000);
             $(".CssFull").animate({
                 width: '49%',
             }, 1000);

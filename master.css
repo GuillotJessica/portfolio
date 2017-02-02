@@ -27,6 +27,14 @@ nav>a {
     text-decoration: none;
 }
 
+.header {
+    padding-right: 0.5em;
+}
+
+.header:hover {
+    border-right: 1px solid white;
+}
+
 .snippet {
     box-sizing: border-box;
     display: none;
@@ -61,6 +69,7 @@ nav>a {
     margin: 0;
     padding-right: 3%;
     float: left;
+    text-shadow: -2px 2px 6px #4a1321;
 }
 
 .level {
@@ -70,6 +79,7 @@ nav>a {
     padding: 0;
     float: left;
     margin-top: 2%;
+    box-shadow: -2px 2px 6px #4a1321;
 }
 
 .SIMPLonMARS>a {
@@ -90,13 +100,16 @@ hr {
     clear: both;
     width: 100%;
 }
+
 .even {
     max-width: 70%;
     float: left;
 }
-p.even{
-  margin: 0.3%;
+
+p.even {
+    margin: 0.3%;
 }
+
 .contact {
     position: fixed;
     bottom: 0;
@@ -118,12 +131,13 @@ h1, h2 {
 
 h2 {
     right: 5%;
+    bottom: 115vh;
 }
 
 h1 {
     right: 5%;
     line-height: 1em;
-
+    bottom: 105vh;
 }
 
 @media (max-width: 800px) {
@@ -140,13 +154,12 @@ h1 {
         margin-top: 75vh;
         position: absolute;
     }
-
     h2, h1 {
-      font-size: 2em;
-      margin: 0;
-      position: absolute;
-      right: 3em;
-  }
+        font-size: 2em;
+        margin: 0;
+        position: absolute;
+        right: 3em;
+    }
     .header:hover {
         border-right: 0;
         background-color: rgba(255, 255, 255, 0.2);
@@ -165,8 +178,8 @@ h1 {
         float: left;
     }
     p.even {
-    margin: 0.6%;
-}
+        margin: 0.6%;
+    }
     body {
         overflow-y: auto;
     }
