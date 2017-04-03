@@ -48,10 +48,16 @@ $(document).ready(function() {
                 width: '49%',
             }, 1000);
             $(".PhPFull").animate({
-                width: '7%',
+                width: '17%',
+            }, 1000);
+            $(".SQL").animate({
+                width: '37%',
             }, 1000);
             $(".WPFull").animate({
                 width: '42%',
+            }, 1000);
+            $(".BJS").animate({
+                width: '70%',
             }, 1000);
         });
 
